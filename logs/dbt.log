@@ -1,0 +1,106 @@
+[0m17:17:35.126360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f121ecf3500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f121f073020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f121e6c08c0>]}
+
+
+============================== 17:17:35.135015 | a6ee8815-a6e1-424e-9aee-ec741bdcbdaf ==============================
+[0m17:17:35.135015 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:17:35.136220 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/emmanuel/.dbt', 'printer_width': '80', 'target_path': 'None', 'no_print': 'None', 'static_parser': 'True', 'warn_error': 'None', 'invocation_command': 'dbt init hands_on', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'debug': 'False', 'use_colors': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'quiet': 'False', 'empty': 'None'}
+[0m17:17:35.153285 [info ] [MainThread]: Creating dbt configuration folder at /home/emmanuel/.dbt
+[0m17:17:35.157621 [debug] [MainThread]: Starter project path: /home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:17:35.172090 [info ] [MainThread]: 
+Your new dbt project "hands_on" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:17:35.174084 [info ] [MainThread]: Setting up your profile.
+[0m17:21:15.106500 [error] [MainThread]: Encountered an error:
+
+[0m17:21:15.117676 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/task/init.py", line 116, in generate_target_from_input
+    target = self.generate_target_from_input(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/click/termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m17:21:15.122445 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 220.10251, "process_in_blocks": "2552", "process_kernel_time": 0.292603, "process_mem_max_rss": "103412", "process_out_blocks": "80", "process_user_time": 2.585746}
+[0m17:21:15.123896 [debug] [MainThread]: Command `dbt init` failed at 17:21:15.123601 after 220.10 seconds
+[0m17:21:15.129519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f121e6c08c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f121df65b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f121e171790>]}
+[0m17:21:15.130844 [debug] [MainThread]: Flushing usage events
+[0m17:21:16.374172 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:21:22.157154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd7cf386060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd7cf52b0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd7cf167b60>]}
+
+
+============================== 17:21:22.163551 | fa3f9884-2a9a-496c-8181-821c1225e573 ==============================
+[0m17:21:22.163551 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:21:22.164851 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'no_print': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init hands_on', 'use_colors': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'quiet': 'False', 'debug': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'profiles_dir': '/home/emmanuel/.dbt', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'write_json': 'True', 'partial_parse': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None'}
+[0m17:21:22.191982 [info ] [MainThread]: A project called hands_on already exists here.
+[0m17:21:22.194245 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.1629225, "process_in_blocks": "0", "process_kernel_time": 0.140411, "process_mem_max_rss": "98996", "process_out_blocks": "0", "process_user_time": 2.346873}
+[0m17:21:22.195569 [debug] [MainThread]: Command `dbt init` succeeded at 17:21:22.195261 after 0.16 seconds
+[0m17:21:22.196350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd7cefc4ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd7cfd5f1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd7ce7f82c0>]}
+[0m17:21:22.197117 [debug] [MainThread]: Flushing usage events
+[0m17:21:23.159099 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:22:51.134417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5350f3d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa534a655e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa534a3ec00>]}
+
+
+============================== 17:22:51.144040 | b96e8805-8af0-4cc2-88dc-c90292273d10 ==============================
+[0m17:22:51.144040 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:22:51.145562 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': '/home/emmanuel/.dbt', 'introspect': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'warn_error': 'None', 'version_check': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init hands_on', 'quiet': 'False', 'debug': 'False', 'cache_selected_only': 'False', 'log_path': 'logs', 'printer_width': '80'}
+[0m17:22:51.179754 [debug] [MainThread]: Starter project path: /home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:22:51.186755 [info ] [MainThread]: 
+Your new dbt project "hands_on" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:22:51.188291 [info ] [MainThread]: Setting up your profile.
+[0m17:26:35.390557 [info ] [MainThread]: Profile hands_on written to /home/emmanuel/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:26:35.393190 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 224.40118, "process_in_blocks": "0", "process_kernel_time": 0.201115, "process_mem_max_rss": "103284", "process_out_blocks": "88", "process_user_time": 2.705009}
+[0m17:26:35.394313 [debug] [MainThread]: Command `dbt init` succeeded at 17:26:35.394045 after 224.40 seconds
+[0m17:26:35.396068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5345c1700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5384172c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa53512b680>]}
+[0m17:26:35.398422 [debug] [MainThread]: Flushing usage events
+[0m17:26:36.342994 [debug] [MainThread]: An error was encountered while trying to flush usage events
