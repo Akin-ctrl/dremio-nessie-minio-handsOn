@@ -104,3 +104,85 @@ Happy modeling!
 [0m17:26:35.396068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5345c1700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5384172c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa53512b680>]}
 [0m17:26:35.398422 [debug] [MainThread]: Flushing usage events
 [0m17:26:36.342994 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:44:07.743015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f3908c530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f37582db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f37036870>]}
+
+
+============================== 09:44:07.764197 | 6f5e83cd-914c-4348-a7c8-acaaf07f5959 ==============================
+[0m09:44:07.764197 [info ] [MainThread]: Running with dbt=1.10.11
+[0m09:44:07.765377 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'static_parser': 'True', 'log_path': 'logs', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'target_path': 'None', 'profiles_dir': '/home/emmanuel/.dbt', 'no_print': 'None', 'write_json': 'True', 'debug': 'False', 'log_format': 'default', 'empty': 'None', 'introspect': 'True', 'warn_error': 'None', 'printer_width': '80', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m09:44:07.845480 [info ] [MainThread]: dbt version: 1.10.11
+[0m09:44:07.848050 [info ] [MainThread]: python version: 3.12.3
+[0m09:44:07.849377 [info ] [MainThread]: python path: /home/tutorials/dremio-nessie-minio-handsOn/dnmho_env/bin/python3
+[0m09:44:07.850716 [info ] [MainThread]: os info: Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m09:44:08.268500 [info ] [MainThread]: Using profiles dir at /home/emmanuel/.dbt
+[0m09:44:08.269381 [info ] [MainThread]: Using profiles.yml file at /home/emmanuel/.dbt/profiles.yml
+[0m09:44:08.276250 [info ] [MainThread]: Using dbt_project.yml file at /home/tutorials/dremio-nessie-minio-handsOn/dbt_project.yml
+[0m09:44:08.278269 [info ] [MainThread]: adapter type: dremio
+[0m09:44:08.279712 [info ] [MainThread]: adapter version: 1.9.0
+[0m09:44:08.281241 [info ] [MainThread]: Configuration:
+[0m09:44:08.282733 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:44:08.284132 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:44:08.285385 [info ] [MainThread]: Required dependencies:
+[0m09:44:08.286716 [debug] [MainThread]: Executing "git --help"
+[0m09:44:08.330068 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:44:08.331246 [debug] [MainThread]: STDERR: "b''"
+[0m09:44:08.332246 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:44:08.333397 [info ] [MainThread]: Connection:
+[0m09:44:08.334344 [info ] [MainThread]:   cloud_host: None
+[0m09:44:08.336077 [info ] [MainThread]:   cloud_project_id: None
+[0m09:44:08.337162 [info ] [MainThread]:   software_host: localhost
+[0m09:44:08.338504 [info ] [MainThread]:   port: 9047
+[0m09:44:08.352208 [info ] [MainThread]:   use_ssl: False
+[0m09:44:08.355050 [info ] [MainThread]:   environment: None
+[0m09:44:08.356584 [info ] [MainThread]:   UID: admin
+[0m09:44:08.366622 [info ] [MainThread]:   root_path: no_schema
+[0m09:44:08.368206 [info ] [MainThread]:   datalake: nessie
+[0m09:44:08.369675 [info ] [MainThread]:   database: dbt
+[0m09:44:08.371212 [info ] [MainThread]:   schema: no_schema
+[0m09:44:08.381572 [info ] [MainThread]:   user: admin
+[0m09:44:08.383362 [info ] [MainThread]:   username: admin
+[0m09:44:08.384583 [info ] [MainThread]:   object_storage_source: nessie
+[0m09:44:08.392937 [info ] [MainThread]:   object_storage_path: no_schema
+[0m09:44:08.397874 [info ] [MainThread]:   dremio_space: dbt
+[0m09:44:08.399188 [info ] [MainThread]:   dremio_space_folder: no_schema
+[0m09:44:08.410135 [info ] [MainThread]: Registered adapter: dremio=1.9.0
+[0m09:44:08.734651 [debug] [MainThread]: Acquiring new dremio connection 'debug'
+[0m09:44:08.735421 [debug] [MainThread]: dremio adapter: Using dremio connection "debug". fetch=False
+[0m09:44:08.736590 [debug] [MainThread]: dremio adapter: On debug: select 1 as id
+[0m09:44:08.741996 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:44:09.048632 [debug] [MainThread]: dremio adapter: Connected to db: dbt
+[0m09:44:09.514743 [debug] [MainThread]: dremio adapter: Job State = METADATA_RETRIEVAL
+[0m09:44:09.738283 [debug] [MainThread]: dremio adapter: Job State = PLANNING
+[0m09:44:09.956844 [debug] [MainThread]: dremio adapter: Job State = RUNNING
+[0m09:44:12.029104 [debug] [MainThread]: dremio adapter: Job State = COMPLETED
+[0m09:44:12.029859 [debug] [MainThread]: dremio adapter: SQL status: 1 in 3.29 seconds
+[0m09:44:12.031360 [debug] [MainThread]: On debug: Close
+[0m09:44:12.031952 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:44:12.032760 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:44:12.033528 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/tutorials/dremio-nessie-minio-handsOn/dbt_project.yml> not found
+
+[0m09:44:12.051755 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.5528817, "process_in_blocks": "5240", "process_kernel_time": 2.353332, "process_mem_max_rss": "104464", "process_out_blocks": "32", "process_user_time": 5.5078}
+[0m09:44:12.056706 [debug] [MainThread]: Command `dbt debug` failed at 09:44:12.056274 after 4.56 seconds
+[0m09:44:12.058378 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:44:12.059825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f36e76c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f36e755b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f365a7dd0>]}
+[0m09:44:12.068793 [debug] [MainThread]: Flushing usage events
+[0m09:44:20.531239 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:45:28.511319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83c0de11f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83c0cdc8f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83beb18710>]}
+
+
+============================== 09:45:28.577664 | 569a325e-6943-40e5-be95-786385061998 ==============================
+[0m09:45:28.577664 [info ] [MainThread]: Running with dbt=1.10.11
+[0m09:45:28.579858 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'debug': 'False', 'log_path': 'logs', 'use_colors': 'True', 'introspect': 'True', 'printer_width': '80', 'invocation_command': 'dbt run', 'no_print': 'None', 'profiles_dir': '/home/emmanuel/.dbt', 'log_format': 'default', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'version_check': 'True'}
+[0m09:45:28.593090 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/tutorials/dremio-nessie-minio-handsOn/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:45:28.600777 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.3635358, "process_in_blocks": "0", "process_kernel_time": 1.189281, "process_mem_max_rss": "98352", "process_out_blocks": "16", "process_user_time": 4.841322}
+[0m09:45:28.602146 [debug] [MainThread]: Command `dbt run` failed at 09:45:28.601818 after 0.37 seconds
+[0m09:45:28.603591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83bee59670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83bed65af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83be88d550>]}
+[0m09:45:28.605046 [debug] [MainThread]: Flushing usage events
+[0m09:45:38.776461 [debug] [MainThread]: An error was encountered while trying to flush usage events
